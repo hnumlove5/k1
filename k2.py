@@ -39,9 +39,9 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 botStart = time.time()
 #===============================================================================#
 print ("\n\n『✯Hnum Bot Line✯』\n")
-with open("token.txt","r") as z:
-    jepangpunya = z.read()
-line = LINE(jepangpunya)
+#with open("token.txt","r") as z:
+#    jepangpunya = z.read()
+line = LINE('')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
